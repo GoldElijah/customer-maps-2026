@@ -22,7 +22,7 @@
 <body>
 <div id="header">
   <h1>🟠 Camrose — All Customers</h1>
-  <span>17 customers | Camrose & surrounding areas, AB</span>
+  <span>12 customers | Camrose & surrounding areas, AB</span>
 </div>
 <div id="map"></div>
 <script>
@@ -45,21 +45,16 @@
   const customers = [
     { no:1, last:"Benke", full:"Gertrude Benke (Harvey)", addr:"6512 55 Ave", city:"Camrose", ref:"P2026-02812", lat:53.03, lon:-112.853 },
     { no:4, last:"Rusk", full:"Carolyn Rusk", addr:"LT 26A Peace Hills Heights", city:"Wetaskiwin", ref:"P2026-02809", lat:52.9693, lon:-113.3769 },
-    { no:18, last:"Wold", full:"Bradley Wold", addr:"19220 Range Road 434", city:"Edberg", ref:"P2026-02756", lat:52.786, lon:-112.786 },
-    { no:24, last:"Law", full:"Sherri Law", addr:"46201 Range Road 213", city:"Camrose County", ref:"000-00-064120", lat:52.936, lon:-112.955 },
-    { no:30, last:"Fadden", full:"Rodney Fadden", addr:"4237 47A Ave", city:"Vermilion", ref:"000-00-064167", lat:53.35, lon:-110.832 },
-    { no:34, last:"Gessner", full:"Kim Gessner", addr:"5135 49 St", city:"Provost", ref:"000-00-064150", lat:52.356, lon:-110.256 },
-    { no:35, last:"Girard", full:"Laura D.L. Girard", addr:"1109 Movile St", city:"Ohaton", ref:"P2026-02767", lat:52.968, lon:-112.66 },
-    { no:38, last:"Carson", full:"Ann Carson", addr:"4827 48 St", city:"Camrose", ref:"P2026-02793", lat:53.019, lon:-112.822 },
-    { no:40, last:"Seaman", full:"Christine Seaman", addr:"222 Wilks Dr", city:"Millet", ref:"000-00-064141", lat:53.062, lon:-113.443 },
-    { no:41, last:"Lambertus", full:"Ryan Lambertus & Teagan Korol", addr:"119 Diamond Dr", city:"Millet", ref:"000-00-064122", lat:53.062, lon:-113.443 },
-    { no:42, last:"Curry", full:"Carol Curry", addr:"5002 58 St", city:"Camrose", ref:"P2026-02764", lat:53.023, lon:-112.84 },
-    { no:44, last:"Zimmer", full:"Cal & Melissa Zimmer", addr:"7210 44A Ave Close", city:"Camrose", ref:"P2026-02790", lat:53.012, lon:-112.867 },
-    { no:46, last:"Gledhill", full:"Louise Gledhill", addr:"6501 50 Ave NW", city:"Camrose", ref:"P2026-02760", lat:53.021, lon:-112.854 },
-    { no:47, last:"Johnson", full:"Dean Johnson", addr:"46028 RR 180", city:"Bawlf", ref:"P2026-02769", lat:53.047, lon:-112.343 },
-    { no:48, last:"Neumann", full:"Richard Neumann", addr:"5233 49 St", city:"Daysland", ref:"000-00-064093", lat:52.867, lon:-112.265 },
-    { no:54, last:"Doerksen", full:"Robert & Rachel Doerksen", addr:"5304 61 St", city:"Camrose", ref:"P2026-02775", lat:53.03, lon:-112.846 },
-    { no:60, last:"Nobert", full:"Nathan Nobert", addr:"4311 73 St", city:"Camrose", ref:"P2026-02770", lat:53.01, lon:-112.866 },
+    { no:14, last:"Wold", full:"Bradley Wold", addr:"19220 Range Road 434", city:"Edberg", ref:"P2026-02756", lat:52.786, lon:-112.786 },
+    { no:20, last:"Law", full:"Sherri Law", addr:"46201 Range Road 213", city:"Camrose County", ref:"000-00-064120", lat:52.936, lon:-112.955 },
+    { no:29, last:"Girard", full:"Laura D.L. Girard", addr:"1109 Movile St", city:"Ohaton", ref:"P2026-02767", lat:52.968, lon:-112.66 },
+    { no:32, last:"Carson", full:"Ann Carson", addr:"4827 48 St", city:"Camrose", ref:"P2026-02793", lat:53.019, lon:-112.822 },
+    { no:33, last:"Lambertus", full:"Ryan Lambertus & Teagan Korol", addr:"119 Diamond Dr", city:"Millet", ref:"000-00-064122", lat:53.062, lon:-113.443 },
+    { no:34, last:"Curry", full:"Carol Curry", addr:"5002 58 St", city:"Camrose", ref:"P2026-02764", lat:53.023, lon:-112.84 },
+    { no:41, last:"Doerksen", full:"Robert & Rachel Doerksen", addr:"5304 61 St", city:"Camrose", ref:"P2026-02775", lat:53.03, lon:-112.846 },
+    { no:49, last:"Unger", full:"Cornelius Unger", addr:"21370 Twp Rd 440", city:"Ferintosh", ref:"P2026-02755", lat:52.766, lon:-112.97 },
+    { no:51, last:"Lang", full:"Andrew & Olivia Lang", addr:"5810 54B Ave", city:"Camrose", ref:"P2026-02828", lat:53.031, lon:-112.841 },
+    { no:56, last:"Weiss", full:"Derek & Charlene Weiss", addr:"SW 11 53 11 W4", city:"Two Hills", ref:"000-00-064244", lat:53.711, lon:-111.74 },
   ];
 
   const pinIcon = L.icon({
